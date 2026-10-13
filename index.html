@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a2a">
+  <title>NASSE BIOLOGY — Sinir Sistemi Evreni</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="NASSE BIOLOGY ana sayfa">
+      <span class="brand-mark">N<span>+</span></span>
+      <span><b>NASSE</b><small>BIOLOGY</small></span>
+    </a>
+    <nav><a href="#missions">Görevler</a><a href="#lab">Laboratuvar</a><a href="#codex">Bilgi arşivi</a></nav>
+    <div class="profile"><span class="online-dot"></span><span>KAŞİF</span><b id="levelBadge">LVL 01</b></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> SİNİR SİSTEMİNE GİRİŞ / BÖLÜM 01</div>
+        <h1>BİYOLOJİYİ<br><span>OYUNA DÖNÜŞTÜR.</span></h1>
+        <p>Sinir sisteminin gizli dünyasını keşfet. Görevleri tamamla, nöronunu tasarla ve bilgini XP'ye dönüştür.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#missions">▶ Maceraya başla</a>
+          <a class="button secondary" href="#lab">Laboratuvarı keşfet ↗</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong id="xpStat">0</strong><span>TOPLAM XP</span></div>
+          <div><strong id="doneStat">0/5</strong><span>TAMAMLANAN GÖREV</span></div>
+          <div><strong>06</strong><span>KEŞİF BÖLÜMÜ</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Animasyonlu sinir ağı görseli">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="neuron-art">
+          <svg viewBox="0 0 420 420" role="img" aria-label="Parlayan nöron çizimi">
+            <defs>
+              <linearGradient id="axon" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#40f5c2"/><stop offset="1" stop-color="#37aaff"/></linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <g stroke="url(#axon)" stroke-width="5" fill="none" stroke-linecap="round" filter="url(#glow)">
+              <path d="M210 207 L160 160 L120 111 L78 88 M160 160 L163 106 L145 67 M120 111 L85 122 L49 109 M160 160 L108 178 L65 168 M108 178 L77 204"/>
+              <path d="M210 207 L252 157 L286 119 L320 92 M252 157 L259 106 L282 73 M286 119 L329 130 L360 119 M252 157 L300 174 L342 164"/>
+              <path d="M210 207 L254 236 L295 257 L344 256 M254 236 L265 285 L298 315 M295 257 L333 290 L368 293"/>
+              <path d="M210 207 L169 250 L138 291 L101 312 M169 250 L178 302 L159 339 M138 291 L96 277 L63 291"/>
+              <path d="M210 207 L218 267 L216 322 L232 360 M218 267 L246 302"/>
+            </g>
+            <g fill="#72ffd5" filter="url(#glow)">
+              <circle cx="210" cy="207" r="34"/><circle cx="78" cy="88" r="7"/><circle cx="145" cy="67" r="6"/>
+              <circle cx="49" cy="109" r="6"/><circle cx="65" cy="168" r="6"/><circle cx="320" cy="92" r="7"/>
+              <circle cx="282" cy="73" r="6"/><circle cx="360" cy="119" r="6"/><circle cx="342" cy="164" r="6"/>
+              <circle cx="344" cy="256" r="7"/><circle cx="298" cy="315" r="6"/><circle cx="368" cy="293" r="6"/>
+              <circle cx="101" cy="312" r="7"/><circle cx="159" cy="339" r="6"/><circle cx="63" cy="291" r="6"/><circle cx="232" cy="360" r="6"/>
+            </g>
+            <circle cx="210" cy="207" r="48" fill="none" stroke="#46bfff" stroke-width="2" opacity=".7"/>
+          </svg>
+        </div>
+        <div class="float-tag tag-a">✦ SİNYAL AKTİF</div><div class="float-tag tag-b">+25 XP</div>
+        <div class="visual-caption"><span class="live-bars"><i></i><i></i><i></i><i></i><i></i></span> NEURAL NETWORK ONLINE</div>
+      </div>
+    </section>
+
+    <section class="section" id="missions">
+      <div class="section-head"><div><div class="eyebrow">01 / GÖREV HARİTASI</div><h2>Keşif alanını seç.</h2></div><span class="section-note">Her görev yeni bir beceri açar <span>↘</span></span></div>
+      <div class="mission-grid">
+        <button class="mission-card" data-game="match"><span class="mission-icon">⌘</span><span class="mission-number">01 — EŞLEŞTİRME</span><h3>Reseptör Avı</h3><p>Uyaranları doğru reseptörlerle eşleştir.</p><span class="card-bottom"><span>5 eşleştirme</span><b>BAŞLA ↗</b></span></button>
+        <button class="mission-card" data-game="quiz"><span class="mission-icon">⚡</span><span class="mission-number">02 — HIZLI TUR</span><h3>Sinir Sistemi Sprinti</h3><p>Bilgini test et, seri cevaplarla bonus kazan.</p><span class="card-bottom"><span>5 soru</span><b>BAŞLA ↗</b></span></button>
+        <button class="mission-card" data-game="write"><span class="mission-icon">✎</span><span class="mission-number">03 — KELİME KODU</span><h3>Bilgiyi Çöz</h3><p>Tanımları oku, biyoloji terimini yaz.</p><span class="card-bottom"><span>3 bilmece</span><b>BAŞLA ↗</b></span></button>
+        <button class="mission-card" data-game="neuron"><span class="mission-icon">✳</span><span class="mission-number">04 — TASARIM</span><h3>Nöron Atölyesi</h3><p>Nöronunun parçalarını seç ve kur.</p><span class="card-bottom"><span>Yaratıcı mod</span><b>BAŞLA ↗</b></span></button>
+        <button class="mission-card" data-game="signal"><span class="mission-icon">〰</span><span class="mission-number">05 — SİNYAL LABI</span><h3>İmpuls Simülatörü</h3><p>Zar potansiyeli aşamalarını sıraya koy.</p><span class="card-bottom"><span>3 aşama</span><b>BAŞLA ↗</b></span></button>
+      </div>
+    </section>
+
+    <section class="section lab-section" id="lab">
+      <div class="section-head"><div><div class="eyebrow">02 / ETKİLEŞİMLİ LABORATUVAR</div><h2>Kurcala. Keşfet. Öğren.</h2></div><span class="section-note">Bilgi, deneyince kalır <span>✦</span></span></div>
+      <div class="lab-grid">
+        <article class="lab-card big-lab">
+          <div class="lab-copy"><span class="pill">TASARIM MODU</span><h3>Kendi nöronunu<br>inşa et.</h3><p>Yapıları seçerek nöronunun özelliklerini keşfet. Her parça sinir sisteminde farklı bir iş yapar.</p><button class="text-button" data-game="neuron">Atölyeyi aç <span>↗</span></button></div>
+          <div class="mini-neuron"><div class="cell-body"></div><i class="dendrite d1"></i><i class="dendrite d2"></i><i class="dendrite d3"></i><i class="axon-line"></i><i class="myelin m1"></i><i class="myelin m2"></i><i class="myelin m3"></i><i class="terminal"></i></div>
+        </article>
+        <article class="lab-card signal-card"><span class="pill">SİNYAL GÖRÜNTÜLEYİCİ</span><h3>Hücre zarındaki<br>değişimi izle.</h3><div class="wave"><svg viewBox="0 0 320 100" preserveAspectRatio="none"><path d="M0 60 L50 60 L90 60 L115 15 L140 15 L170 80 L200 60 L320 60" fill="none" stroke="#4ce7bf" stroke-width="3" stroke-linejoin="round"/></svg><div class="wave-labels"><span>Dinlenim</span><span>Depolarizasyon</span><span>Repolarizasyon</span></div></div><button class="text-button" data-game="signal">Simülasyonu başlat <span>↗</span></button></article>
+      </div>
+    </section>
+
+    <section class="section" id="codex">
+      <div class="section-head"><div><div class="eyebrow">03 / SAHA NOTLARI</div><h2>Bilgi arşivi.</h2></div><span class="section-note">Kısa notlar, büyük keşifler <span>✦</span></span></div>
+      <div class="codex-grid">
+        <details class="codex-item"><summary><span>01</span> Reseptör çeşitleri <b>＋</b></summary><p><strong>Kemoreseptör:</strong> Kimyasal maddeleri algılar. <strong>Mekanoreseptör:</strong> Basınç, dokunma ve titreşim gibi mekanik uyaranları algılar. <strong>Termoreseptör:</strong> Sıcaklık değişimini algılar. <strong>Ağrı reseptörleri:</strong> Dokuya zarar verebilecek uyaranlara yanıt verir. <strong>Fotoreseptör:</strong> Işığı algılar.</p></details>
+        <details class="codex-item"><summary><span>02</span> Nöronun yapısı ve çeşitleri <b>＋</b></summary><p>Dendritler sinyali alır; hücre gövdesi hücresel faaliyetleri yönetir; akson impulsu iletir. Miyelin kılıf iletimi hızlandırabilir. Duyu nöronu bilgiyi merkezi sinir sistemine taşır, ara nöronlar bağlantı kurar, motor nöron kas veya bezlere sinyal iletir. Schwann hücreleri çevresel, oligodendrositler merkezi sinir sisteminde miyelin oluşturur.</p></details>
+        <details class="codex-item"><summary><span>03</span> Nörotransmitterler <b>＋</b></summary><p><strong>Serotonin:</strong> Duygu durumu ve çeşitli fizyolojik işlevlerle ilişkilidir. <strong>Dopamin:</strong> Ödül, motivasyon ve hareketin düzenlenmesinde rol alır. <strong>Epinefrin (adrenalin)</strong> ve <strong>norepinefrin (noradrenalin)</strong> uyarılma ve stres yanıtlarında görev alabilir. Etkileri, reseptör türüne ve bulunduğu sisteme göre değişir.</p></details>
+        <details class="codex-item"><summary><span>04</span> Zar potansiyeli <b>＋</b></summary><p><strong>Polarizasyon:</strong> Dinlenim durumunda zarın iki tarafı arasında elektriksel potansiyel farkı bulunur. <strong>Depolarizasyon:</strong> Zar potansiyeli daha az negatif hâle gelir; tipik nöron aksiyon potansiyelinde Na⁺ kanalları açılır. <strong>Repolarizasyon:</strong> Potansiyel dinlenim değerine doğru döner; K⁺ çıkışı önemli rol oynar.</p></details>
+        <details class="codex-item"><summary><span>05</span> İmpuls ve sinaps <b>＋</b></summary><p>İmpuls, nöron boyunca ilerleyen elektriksel sinyaldir. Miyelinli aksonlarda uyarı Ranvier boğumları arasında sıçramalı iletilir. Kimyasal sinapsta nörotransmitterler presinaptik uçtan salınır, aralıktan geçer ve postsinaptik hücrede reseptörlere bağlanır.</p></details>
+        <details class="codex-item"><summary><span>06</span> Glia hücreleri <b>＋</b></summary><p><strong>Mikroglia:</strong> Merkezi sinir sisteminde bağışıklık gözetimi ve hücresel artıkların temizlenmesinde görev alır. <strong>Oligodendrosit:</strong> Merkezi sinir sisteminde miyelin oluşturur. <strong>Schwann hücresi:</strong> Çevresel sinir sisteminde aksonların miyelinlenmesine yardımcı olur.</p></details>
+      </div>
+      <p class="curriculum-note">Not: İçerik, 11. sınıf sinir sistemi konularını çalışmak için hazırlanmış bir öğrenme oyunu taslağıdır. Öğretmeninin kullandığı güncel Türkiye Yüzyılı Maarif Modeli kazanımları ve ders materyalleriyle karşılaştırarak son kontrolü yap.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">N<span>+</span></span><span><b>NASSE</b><small>BIOLOGY</small></span></a><span>KEŞFETMEK DE BİR BİLİM.</span><span>v1.0 · STUDENT BUILD</span></footer>
+
+  <div class="modal-backdrop" id="gameModal" hidden>
+    <section class="game-modal" role="dialog" aria-modal="true" aria-labelledby="gameTitle">
+      <button class="close-modal" id="closeModal" aria-label="Pencereyi kapat">×</button>
+      <div class="eyebrow" id="gameEyebrow">OYUN MODU</div><h2 id="gameTitle">Görev</h2>
+      <div id="gameContent"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
